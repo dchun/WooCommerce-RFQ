@@ -1,0 +1,365 @@
+# Copyright (C) 2016 Boopis WooCommerce RFQ
+# This file is distributed under the same license as the Boopis WooCommerce RFQ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Boopis WooCommerce RFQ 1.4.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/boopis-"
+"woocommerce-rfq\n"
+"POT-Creation-Date: 2016-05-20 19:18:06+00:00\n"
+"PO-Revision-Date: 2016-05-20 12:20-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: boopis-rfq.php:51
+msgctxt "page_slug"
+msgid "rfq"
+msgstr ""
+
+#: boopis-rfq.php:52
+msgid "RFQ"
+msgstr ""
+
+#: boopis-rfq.php:93 boopis-rfq.php:100
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Usted no tiene suficientes permisos para acceder a esta página."
+
+#: boopis-rfq.php:107
+msgid "Settings"
+msgstr "Configuración"
+
+#: includes/class-boopis-rfq-session.php:452 templates/overrides.php:502
+msgid "View quote &rarr;"
+msgstr "Ver cotización &rarr;"
+
+#: includes/class-boopis-rfq-session.php:452
+msgid "You already have this item in your quote."
+msgstr "Ya tiene este punto en su cotización."
+
+#: templates/empty_form.php:12
+msgid "You have not added any items to your quotation form. Continue "
+msgstr "Usted no ha añadido productos a su formato de cotización . Continuar "
+
+#: templates/empty_form.php:12
+msgid "shopping."
+msgstr "compras."
+
+#: templates/form.php:84
+msgid "From: "
+msgstr "De: "
+
+#: templates/form.php:85
+msgid "Email: "
+msgstr "Correo electrónico: "
+
+#: templates/form.php:86
+msgid "Company: "
+msgstr "Empresa: "
+
+#: templates/form.php:87
+msgid "Phone: "
+msgstr "Teléfono:"
+
+#: templates/form.php:88
+msgid "Postcode: "
+msgstr "Código postal: "
+
+#: templates/form.php:89
+msgid "Comments: "
+msgstr "Comentarios:"
+
+#: templates/form.php:92
+msgid "Product Name: "
+msgstr "Nombre del producto: "
+
+#: templates/form.php:94
+msgid "SKU: "
+msgstr "SKU: "
+
+#: templates/form.php:96
+msgid "Quantity: "
+msgstr "Cantidad: "
+
+#: templates/form.php:99
+msgid "Options: "
+msgstr "Opciones:"
+
+#: templates/form.php:107
+msgid "IP: "
+msgstr "IP: "
+
+#: templates/form.php:108
+msgid "Referer: "
+msgstr "Remitir: "
+
+#: templates/form.php:109
+msgid "Source: "
+msgstr "Fuente: "
+
+#: templates/form.php:110
+msgid "Medium: "
+msgstr "Medio: "
+
+#: templates/form.php:111
+msgid "Campaign: "
+msgstr "Campaña: "
+
+#: templates/form.php:112
+msgid "Content: "
+msgstr "Contenido: "
+
+#: templates/form.php:115
+msgid "First name is required"
+msgstr "Nombre de pilla es necesario"
+
+#: templates/form.php:118
+msgid "Email is invalid"
+msgstr "El correo electrónico es invalido"
+
+#: templates/form.php:121
+msgid "Phone number is required"
+msgstr "Numero de teléfono es invalido"
+
+#: templates/form.php:124
+msgid "Postcode is required"
+msgstr "El código postal es invalido"
+
+#: templates/form.php:127
+msgid "Human verification failed"
+msgstr "Verificación humana fracasó"
+
+#: templates/form.php:138
+msgid "Hey "
+msgstr "Hola "
+
+#: templates/form.php:138
+msgid "thanks for the quote request!"
+msgstr "gracias por la solicitud de cotización!"
+
+#: templates/form.php:139
+msgid "We'll get back to you ASAP!"
+msgstr "Nos pondremos en contacto con usted lo antes posible!"
+
+#: templates/form.php:156
+msgid "Product"
+msgstr "Producto"
+
+#: templates/form.php:157
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: templates/form.php:173
+msgid "Remove this item"
+msgstr "Eliminar este elemento"
+
+#: templates/form.php:218
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: templates/form.php:246
+msgid "First Name"
+msgstr "Nombre de pilla"
+
+#: templates/form.php:250
+msgid "Last Name"
+msgstr "Apellido"
+
+#: templates/form.php:254
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: templates/form.php:258
+msgid "Company"
+msgstr "Empresa"
+
+#: templates/form.php:262
+msgid "Phone"
+msgstr "Numero de teléfono"
+
+#: templates/form.php:266
+msgid "Postcode"
+msgstr "El código"
+
+#: templates/form.php:270
+msgid "Comments"
+msgstr "Comentarios"
+
+#: templates/form.php:274
+msgid "Human Verification"
+msgstr "Verificación humana"
+
+#: templates/form.php:278
+msgid "Send for quote"
+msgstr "Enviar a cotización"
+
+#: templates/overrides.php:55 templates/overrides.php:57
+msgid "Request Quote"
+msgstr "Solicitar cotización"
+
+#: templates/overrides.php:67 templates/overrides.php:69
+#: templates/overrides.php:117 templates/overrides.php:126
+#: templates/overrides.php:136 templates/overrides.php:172
+msgid "Inquire"
+msgstr "Preguntar"
+
+#: templates/overrides.php:196
+msgid "View Quote &rarr;"
+msgstr "Ver cotización &rarr;"
+
+#: templates/overrides.php:277
+msgid "Quote updated."
+msgstr "Cotización actualiza."
+
+#: templates/overrides.php:320 templates/overrides.php:378
+msgid "Please choose product options"
+msgstr "Por favor, seleccione las opciones de producto"
+
+#: templates/overrides.php:411
+msgid "Please choose the quantity of items you wish to add to your quote"
+msgstr ""
+"Por favor seleccione la cantidad de artículos que desea añadir a su "
+"presupuesto"
+
+#: templates/overrides.php:418
+msgid "Please choose a product to add to your quot"
+msgstr "Por favor, elija un producto a añadir a su quot"
+
+#: templates/overrides.php:487
+msgid "Added &quot;%s&quot; to your quote."
+msgstr "Añadido &quot;%s&quot; a su cotización."
+
+#: templates/overrides.php:487
+msgid "&quot; and &quot;"
+msgstr ""
+
+#: templates/overrides.php:490
+msgid "&quot;%s&quot; was successfully added to your quote."
+msgstr "&quot;%s&quot; fue agregado con éxito a su cotización."
+
+#: templates/overrides.php:498
+msgid "Continue Shopping &rarr;"
+msgstr "Continue Shopping &rarr;"
+
+#: templates/rfq_settings.php:35
+msgid "Boopis RFQ Settings"
+msgstr "Boopis RFQ Configuración"
+
+#: templates/rfq_settings.php:43
+msgid "Use Formbuilder?"
+msgstr "Utilice FormBuilder?"
+
+#: templates/rfq_settings.php:48
+msgid "Check to use formbuilder fields"
+msgstr "Compruebe para utilizar campos FormBuilder"
+
+#: templates/rfq_settings.php:48
+msgid "Boopis Formbuilder Addon required."
+msgstr "Boopis FormBuilder Add On requerido."
+
+#: templates/rfq_settings.php:54
+msgid "Quotation recipient e-mail address"
+msgstr "Receptor de cotización dirección de correo electrónico"
+
+#: templates/rfq_settings.php:64
+msgid "Change Quotation Trigger (Default - Zero Price Recommended): "
+msgstr "Cambiar la cita de disparo ( por defecto - Cero precio recomendado): "
+
+#: templates/rfq_settings.php:69
+msgid "Define by Tag"
+msgstr "Definir por Tag"
+
+#: templates/rfq_settings.php:73
+msgid "Tag Name"
+msgstr "Nombre de la etiqueta"
+
+#: templates/rfq_settings.php:83
+msgid "Replace \"Free\" with \"Request Quote\" on triggered items? "
+msgstr ""
+"Reemplazar \"libre\" con \"Solicitud de Cotización\" en los elementos "
+"desencadenados? "
+
+#: templates/rfq_settings.php:88
+msgid "Check to replace price"
+msgstr "Compruebe para reemplazar precio"
+
+#: templates/rfq_settings.php:94
+msgid "Thank you message"
+msgstr "Gracias mensaje"
+
+#: templates/rfq_settings.php:100
+msgid "Upon successful request, write thank you message."
+msgstr "A petición tiene éxito, se escribe un mensaje de agradecimiento."
+
+#: templates/settings.php:8
+msgid "Boopis Settings"
+msgstr "Boopis Configuración"
+
+#: templates/settings.php:12
+msgid "Click here to edit your settings."
+msgstr "Haga clic aquí para editar la configuración."
+
+#: templates/settings.php:18
+msgid "Need custom work? Let me know!"
+msgstr "Necesita trabajos a medida ? ¡Házmelo saber!"
+
+#: templates/settings.php:21
+msgid "Support"
+msgstr "Apoyo"
+
+#: templates/settings.php:29
+msgid "Donate to continue supporting development of this plugin."
+msgstr "Donar a seguir apoyando el desarrollo de este plugin."
+
+#: templates/settings.php:31
+msgid "Plugin Add-Ons"
+msgstr "Plugin de add-ons"
+
+#. Plugin Name of the plugin/theme
+msgid "Boopis WooCommerce RFQ"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://boopis.com/products/1-wordpress-woocommerce-request-for-quotation"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Replaces products with a price of zero to an open form for inquiry"
+msgstr ""
+"Sustituye a los productos con un precio de cero a una forma abierta para la "
+"investigación"
+
+#. Author of the plugin/theme
+msgid "Boopis Media"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://boopis.com/"
+msgstr ""
+
+#~ msgid "Quotation Request from "
+#~ msgstr "Solicitud de cita de"
+
+#~ msgid "Name"
+#~ msgstr "Nombre"
+
+#~ msgid "Addon required (Default is zero)."
+#~ msgstr "Complemento necesario (por defecto es cero)."
+
+#~ msgid "Add Product Name?"
+#~ msgstr "Añadir nombre del producto?"
+
+#~ msgid "Check to add product name to form"
+#~ msgstr "Marque para añadir un nombre de producto para formar"
+
+#~ msgid "Add Product SKU?"
+#~ msgstr "Añadir producto SKU?"
+
+#~ msgid "Check to add product sku to form"
+#~ msgstr "Marque para añadir un producto SKU para formar"

@@ -1,0 +1,743 @@
+# Copyright (C) 2016 Boopis WooCommerce RFQ
+# This file is distributed under the same license as the Boopis WooCommerce RFQ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Boopis WooCommerce RFQ 3.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/boopis-"
+"woocommerce-rfq\n"
+"POT-Creation-Date: 2016-06-03 20:19:26+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: boopis-rfq.php:53
+msgctxt "page_slug"
+msgid "rfq"
+msgstr ""
+
+#: boopis-rfq.php:54
+msgid "RFQ"
+msgstr ""
+
+#: boopis-rfq.php:79
+msgid ""
+"ATTENTION! Plugin has been merged with premium MPRFQ Plugin. If you have the "
+"MPRFQ plugin installed, deactivate and delete it first before updating. "
+"Also, ensure that you update the premium formbuilder plugin."
+msgstr ""
+
+#: boopis-rfq.php:121 boopis-rfq.php:128
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: boopis-rfq.php:135
+msgid "Settings"
+msgstr ""
+
+#: includes/boopis-rfq-order-functions.php:26
+msgid "%s email notification manually sent."
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:38
+#: includes/class-boopis-rfq-admin.php:72
+msgctxt "Order status"
+msgid "New Quote"
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:43
+msgid "New Quote <span class=\"count\">(%s)</span>"
+msgid_plural "Back Order <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-boopis-rfq-admin.php:46
+#: includes/class-boopis-rfq-admin.php:73
+msgctxt "Order status"
+msgid "Pending Quote"
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:51
+msgid "Pending Quote <span class=\"count\">(%s)</span>"
+msgid_plural "Back Order <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-boopis-rfq-admin.php:54
+#: includes/class-boopis-rfq-admin.php:74
+msgctxt "Order status"
+msgid "Expired Quote"
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:59
+msgid "Expired Quote <span class=\"count\">(%s)</span>"
+msgid_plural "Back Order <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-boopis-rfq-admin.php:62
+#: includes/class-boopis-rfq-admin.php:75
+msgctxt "Order status"
+msgid "Failed Quote"
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:67
+msgid "Failed Quote <span class=\"count\">(%s)</span>"
+msgid_plural "Back Order <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-boopis-rfq-admin.php:104
+msgid "Proposal Details"
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:104
+msgid ""
+"Note: Don't forget to change the status to pending when you save this "
+"proposal. An email will be sent upon saving this order with the prices and "
+"terms that have been added (You can disable this under the email settings "
+"tab labled 'Pending Quote')."
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:115
+msgid "Proposal Terms: "
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:117
+msgid "Terms of proposal will be added to quotation."
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:125
+msgid "Expiration Date: "
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:127
+msgid "Optionally set a date at which this proposal will expire."
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:174
+msgid "Send Quotation To Customer"
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:222
+msgid "RFQ Received"
+msgstr ""
+
+#: includes/class-boopis-rfq-admin.php:224
+msgid "Proposal"
+msgstr ""
+
+#: includes/class-boopis-rfq-emails.php:112
+msgid "Email"
+msgstr ""
+
+#: includes/class-boopis-rfq-emails.php:119
+msgid "Tel"
+msgstr ""
+
+#: includes/class-boopis-rfq-emails.php:126
+msgid "Note"
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:36
+msgid "Account username"
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:38
+msgctxt "placeholder"
+msgid "Username"
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:45
+msgid "Account password"
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:47
+msgctxt "placeholder"
+msgid "Password"
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:55
+msgid "Quote Notes"
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:56
+msgctxt "placeholder"
+msgid "Notes about your order, e.g. special notes for delivery."
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:71
+#: includes/class-boopis-rfq-front.php:215
+msgid "We were unable to process your request, please try again."
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:112
+msgid "is a required field."
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:125
+msgid "Please enter a valid postcode/ZIP."
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:134
+msgid "is not a valid phone number."
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:140
+msgid "is not a valid email address."
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:158
+msgid "is not valid. Please enter one of the following:"
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:350
+#: includes/class-boopis-rfq-form.php:352
+msgid "Error %d: Unable to create order. Please try again."
+msgstr ""
+
+#: includes/class-boopis-rfq-form.php:371
+msgid "Error %d: Unable to create rfq. Please try again."
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:77
+#: includes/class-boopis-rfq-front.php:79
+msgid "Request Quote"
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:89
+#: includes/class-boopis-rfq-front.php:91
+#: includes/class-boopis-rfq-front.php:139
+#: includes/class-boopis-rfq-front.php:148
+#: includes/class-boopis-rfq-front.php:158
+#: includes/class-boopis-rfq-front.php:187
+msgid "Inquire"
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:202
+msgid "View Quote &rarr;"
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:227
+msgid "Your actions are invalid, please try again."
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:232
+msgid "Customer accepted proposal."
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:240
+msgid "Customer declined proposal."
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:246
+msgid "Your must either accept or decline the offer."
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:350
+msgid "Quote updated."
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:383
+#: includes/class-boopis-rfq-front.php:441
+msgid "Please choose product options"
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:474
+msgid "Please choose the quantity of items you wish to add to your quote"
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:481
+msgid "Please choose a product to add to your quot"
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:543
+msgid "Added &quot;%s&quot; to your quote."
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:543
+msgid "&quot; and &quot;"
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:546
+msgid "&quot;%s&quot; was successfully added to your quote."
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:554
+msgid "Continue Shopping &rarr;"
+msgstr ""
+
+#: includes/class-boopis-rfq-front.php:558
+#: includes/class-boopis-rfq-session.php:452
+msgid "View quote &rarr;"
+msgstr ""
+
+#: includes/class-boopis-rfq-session.php:452
+msgid "You already have this item in your quote."
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-expired-quote.php:25
+msgid "Expired Quote"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-expired-quote.php:26
+msgid ""
+"This is a quote notification sent to customers when their quote expires."
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-expired-quote.php:27
+msgid "Quote Expired"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-expired-quote.php:28
+msgid "[{site_title}] Proposal #{order_number} has expired"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-new-quote.php:25
+msgid "New Quote (Customer)"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-new-quote.php:26
+msgid ""
+"This is a quote notification sent to customers containing their quote "
+"details."
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-new-quote.php:27
+msgid "Thank you for your quote request"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-new-quote.php:28
+msgid "[{site_title}] Your RFQ from {order_date}"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-pending-quote.php:25
+msgid "Pending Quote"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-pending-quote.php:26
+msgid ""
+"This is a quote notification sent to customers containing your offer details."
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-pending-quote.php:27
+msgid "Proposal #{order_number}"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-customer-email-pending-quote.php:28
+msgid "[{site_title}] Proposal #{order_number} for RFQ from {order_date}"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:24
+msgid "Failed Quote"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:25
+msgid ""
+"Failed quote emails are sent to chosen recipient(s) when quote have been "
+"marked failed."
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:26
+msgid "Failed RFQ"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:27
+msgid "[{site_title}] Failed RFQ ({order_number})"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:99
+#: includes/emails/class-boopis-rfq-email-new-quote.php:97
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:101
+#: includes/emails/class-boopis-rfq-email-new-quote.php:99
+msgid "Enable this email notification"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:105
+#: includes/emails/class-boopis-rfq-email-new-quote.php:103
+msgid "Recipient(s)"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:107
+#: includes/emails/class-boopis-rfq-email-new-quote.php:105
+msgid ""
+"Enter recipients (comma separated) for this email. Defaults to <code>%s</"
+"code>."
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:113
+#: includes/emails/class-boopis-rfq-email-new-quote.php:111
+msgid "Subject"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:115
+#: includes/emails/class-boopis-rfq-email-new-quote.php:113
+msgid ""
+"This controls the email subject line. Leave blank to use the default "
+"subject: <code>%s</code>."
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:121
+#: includes/emails/class-boopis-rfq-email-new-quote.php:119
+msgid "Email Heading"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:123
+#: includes/emails/class-boopis-rfq-email-new-quote.php:121
+msgid ""
+"This controls the main heading contained within the email notification. "
+"Leave blank to use the default heading: <code>%s</code>."
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:129
+#: includes/emails/class-boopis-rfq-email-new-quote.php:127
+msgid "Email type"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-failed-quote.php:131
+#: includes/emails/class-boopis-rfq-email-new-quote.php:129
+msgid "Choose which format of email to send."
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-new-quote.php:24
+msgid "New Quote (Admin)"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-new-quote.php:25
+msgid ""
+"New quote emails are sent to chosen recipient(s) when a new quote is "
+"received."
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-new-quote.php:26
+msgid "New Request For Quotation"
+msgstr ""
+
+#: includes/emails/class-boopis-rfq-email-new-quote.php:27
+msgid "[{site_title}] New RFQ ({order_number}) - {order_date}"
+msgstr ""
+
+#: templates/emails/admin-failed-quote.php:13
+msgid "Proposal for quote #%d has failed. The quote was as follows:"
+msgstr ""
+
+#: templates/emails/admin-new-quote.php:13
+msgid "You have received a request for quotation. The RFQ is as follows:"
+msgstr ""
+
+#: templates/emails/customer-expired-quote.php:13
+#: templates/emails/plain/customer-expired-quote.php:11
+msgid "Here is our proposal:"
+msgstr ""
+
+#: templates/emails/customer-new-quote.php:13
+#: templates/emails/plain/customer-new-quote.php:11
+msgid ""
+"Your request for quote has been received and is now being considered. Your "
+"RFQ details are shown below for your reference:"
+msgstr ""
+
+#: templates/emails/customer-pending-quote.php:13
+msgid ""
+"Your request for quotation has been processed. The details of our proposal "
+"are shown below:"
+msgstr ""
+
+#: templates/emails/email-quote-customer-details.php:8
+#: templates/emails/plain/email-quote-customer-details.php:7
+#: templates/form/main.php:48 templates/form/thankyou.php:87
+msgid "Request Details"
+msgstr ""
+
+#: templates/emails/email-quote-details.php:10
+#: templates/emails/email-quote-details.php:12
+msgid "RFQ #%s"
+msgstr ""
+
+#: templates/emails/email-quote-details.php:18 templates/form/items.php:12
+#: templates/form/proposal.php:71 templates/form/thankyou.php:48
+msgid "Product"
+msgstr ""
+
+#: templates/emails/email-quote-details.php:19 templates/form/items.php:13
+msgid "Quantity"
+msgstr ""
+
+#: templates/emails/email-quote-details.php:22
+msgid "Price"
+msgstr ""
+
+#: templates/emails/email-quote-items.php:18
+msgid "Product Image"
+msgstr ""
+
+#: templates/emails/email-quote-terms.php:8
+#: templates/emails/plain/email-quote-terms.php:7
+msgid "Proposal Terms"
+msgstr ""
+
+#: templates/emails/email-quote-terms.php:13
+msgid "Valid Until"
+msgstr ""
+
+#: templates/emails/email-quote-terms.php:22
+#: templates/emails/plain/email-quote-terms.php:19
+msgid "Accept or decline proposal here"
+msgstr ""
+
+#: templates/emails/plain/admin-failed-quote.php:11
+msgid "Proposal for quote #%d from %s has failed. The quote was as follows:"
+msgstr ""
+
+#: templates/emails/plain/admin-new-quote.php:11
+msgid "You have received a request for quotation."
+msgstr ""
+
+#: templates/emails/plain/customer-pending-quote.php:11
+msgid ""
+"Your request for quote has been processed. The details of our proposal are "
+"shown below:"
+msgstr ""
+
+#: templates/emails/plain/email-quote-details.php:9
+msgid "RFQ number: %s"
+msgstr ""
+
+#: templates/emails/plain/email-quote-details.php:10
+msgid "jS F Y"
+msgstr ""
+
+#: templates/emails/plain/email-quote-details.php:32
+msgid "View order: %s"
+msgstr ""
+
+#: templates/emails/plain/email-quote-items.php:28
+msgid "Quantity: %s"
+msgstr ""
+
+#: templates/emails/plain/email-quote-items.php:32
+msgid "Cost: %s"
+msgstr ""
+
+#: templates/emails/plain/email-quote-items.php:44
+msgid "Download %d"
+msgstr ""
+
+#: templates/emails/plain/email-quote-items.php:46
+msgid "Download"
+msgstr ""
+
+#: templates/form/items.php:29
+msgid "Remove this item"
+msgstr ""
+
+#: templates/form/items.php:69
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: templates/form/main.php:18
+msgid "Returning customer?"
+msgstr ""
+
+#: templates/form/main.php:19
+msgid "Click here to login"
+msgstr ""
+
+#: templates/form/main.php:24
+msgid ""
+"If you have shopped with us before, please enter your details in the boxes "
+"below. If you are a new customer."
+msgstr ""
+
+#: templates/form/main.php:34
+msgid "Request Items"
+msgstr ""
+
+#: templates/form/main.php:66
+msgid "Create an account?"
+msgstr ""
+
+#: templates/form/main.php:73
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login at the top of the page."
+msgstr ""
+
+#: templates/form/main.php:95
+msgid "Submit Request"
+msgstr ""
+
+#: templates/form/main.php:101
+msgid "Your RFQ is empty."
+msgstr ""
+
+#: templates/form/main.php:114 templates/form/proposal.php:132
+msgid "Error processing request. Please try again."
+msgstr ""
+
+#: templates/form/proposal.php:28
+msgid "Sorry this proposal is invalid"
+msgstr ""
+
+#: templates/form/proposal.php:35
+msgid "Invalid order. If you have an account please log in and try again."
+msgstr ""
+
+#: templates/form/proposal.php:35
+msgid "My Account"
+msgstr ""
+
+#: templates/form/proposal.php:40
+msgid ""
+"This order&rsquo;s status is &ldquo;%s&rdquo;&mdash;it cannot be paid for. "
+"Please contact us if you need assistance."
+msgstr ""
+
+#: templates/form/proposal.php:45
+msgid "It seems like the proposal price is invalid."
+msgstr ""
+
+#: templates/form/proposal.php:54
+msgid "Your proposal has expired"
+msgstr ""
+
+#: templates/form/proposal.php:72
+msgid "Qty"
+msgstr ""
+
+#: templates/form/proposal.php:73
+msgid "Totals"
+msgstr ""
+
+#: templates/form/proposal.php:103
+msgid "Terms"
+msgstr ""
+
+#: templates/form/proposal.php:118
+msgid "Accept Proposal"
+msgstr ""
+
+#: templates/form/proposal.php:119
+msgid "Decline Proposal"
+msgstr ""
+
+#: templates/form/thankyou.php:24
+msgid "Thank you. Your request for quotation has been received."
+msgstr ""
+
+#: templates/form/thankyou.php:28
+msgid "RFQ Number:"
+msgstr ""
+
+#: templates/form/thankyou.php:32
+msgid "Date:"
+msgstr ""
+
+#: templates/form/thankyou.php:44
+msgid "RFQ Details"
+msgstr ""
+
+#: templates/form/thankyou.php:94
+msgid "N/A"
+msgstr ""
+
+#: templates/form/thankyou.php:102
+msgid "Email:"
+msgstr ""
+
+#: templates/form/thankyou.php:107
+msgid "Telephone:"
+msgstr ""
+
+#: templates/form/thankyou.php:112
+msgid "Note:"
+msgstr ""
+
+#: templates/form/thankyou.php:123
+msgid ""
+"Thank you. Your rfq has been made. Check your email to ensure that your "
+"request has been received."
+msgstr ""
+
+#: templates/rfq_settings.php:29
+msgid "Boopis RFQ Settings"
+msgstr ""
+
+#: templates/rfq_settings.php:37
+msgid "Change Quotation Trigger (Default - Zero Price Recommended): "
+msgstr ""
+
+#: templates/rfq_settings.php:42
+msgid "Define by Tag"
+msgstr ""
+
+#: templates/rfq_settings.php:46
+msgid "Tag Name"
+msgstr ""
+
+#: templates/rfq_settings.php:56
+msgid "Replace \"Free\" with \"Request Quote\" on triggered items? "
+msgstr ""
+
+#: templates/rfq_settings.php:61
+msgid "Check to replace price"
+msgstr ""
+
+#: templates/rfq_settings.php:67
+msgid "RFQ Page"
+msgstr ""
+
+#: templates/rfq_settings.php:68
+msgid "Page contents:"
+msgstr ""
+
+#: templates/rfq_settings.php:97
+msgid "Select a page&hellip;"
+msgstr ""
+
+#: templates/settings.php:8
+msgid "Boopis Settings"
+msgstr ""
+
+#: templates/settings.php:12
+msgid "Click here to edit your settings."
+msgstr ""
+
+#: templates/settings.php:18
+msgid "Need custom work? Let me know!"
+msgstr ""
+
+#: templates/settings.php:21
+msgid "Support"
+msgstr ""
+
+#: templates/settings.php:29
+msgid "Donate to continue supporting development of this plugin."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Boopis WooCommerce RFQ"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://boopis.com/products/1-wordpress-woocommerce-request-for-quotation"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Replaces products with a price of zero to an open form for inquiry"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Boopis Media"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://boopis.com/"
+msgstr ""
