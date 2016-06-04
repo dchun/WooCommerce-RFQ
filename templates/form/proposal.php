@@ -103,7 +103,7 @@ $terms = boopis_rfq_get_quote_terms( $order->id );
 				<h2><?php _e( 'Terms', 'boopis-woocommerce-rfq' ); ?></h2>
 
 				<?php if (!empty($terms)) : ?>
-					<p><?php echo boopis_rfq_get_quote_terms( $order->id ); ?></p>
+					<p><?php echo nl2br( esc_html($terms) ); ?></p>
 				<?php endif; ?>
 
 				<?php if (!empty($validity_date)) : ?>

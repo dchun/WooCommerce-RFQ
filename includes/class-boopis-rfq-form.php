@@ -74,6 +74,9 @@ class BOOPIS_RFQ_Form {
 			// Prevent timeout
 			@set_time_limit(0);
 
+			// Allow plugins to process incoming post data
+			do_action( 'boopis_rfq_process' );
+
 			// Form fields (not defined in form_fields)
 			$this->posted['createaccount']             = isset( $_POST['createaccount'] ) && ! empty( $_POST['createaccount'] ) ? 1 : 0;
 
@@ -391,6 +394,9 @@ class BOOPIS_RFQ_Form {
 					}
 				}
 			}
+
+			// Let plugins add meta
+			do_action( 'boopis_rfq_update_order_meta', $order_id, $this->posted );
 
 			// If we got here, the order was created without problems!
 			wc_transaction_query( 'commit' );

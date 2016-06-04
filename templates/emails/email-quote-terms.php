@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <h2><?php _e( 'Proposal Terms', 'boopis-woocommerce-rfq' ); ?></h2>
 <p>
-	<?php echo boopis_rfq_get_quote_terms( $order->id ); ?>
+	<?php echo nl2br( esc_html( boopis_rfq_get_quote_terms( $order->id ) ) ); ?>
 </p>
 <p>
 	<?php _e('Valid Until', 'boopis-woocommerce-rfq'); ?> - <?php echo boopis_rfq_get_quote_expiration( $order->id ); ?>

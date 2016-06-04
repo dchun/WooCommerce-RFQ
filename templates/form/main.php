@@ -60,6 +60,8 @@ if ( ! is_user_logged_in() ) {
 
 						<?php endforeach; ?>
 
+						<?php do_action( 'boopis_rfq_after_order_notes', $form ); ?>
+
 						<?php if ( ! is_user_logged_in() ) : ?>
 
 							<p class="form-row form-row-wide create-account">

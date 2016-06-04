@@ -11,7 +11,9 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Replaces products with a price of zero to an open form for inquiry
 
 == Description ==
-* [Demo](http://demo.boopis.com/wp_rfq/ "rfq")
+[Demo](http://demo.boopis.com/wp_rfq/ "rfq")
+
+#### The Original RFQ Plugin For Wordpress
 
 Turning your online store into a lead generating machine has never been easier with the WooCommerce Request For Quotation Plugin for Wordpress. As competition increases with everyone selling the same products online, merchants are beginning to use ecommerce stores as a means to generate inquiries for custom quoted products.
 
@@ -22,6 +24,19 @@ Turn all you products into quotable items or pick just a few and mix and match i
 Alernatively you can turn your products into quotable items based on product tags.
 
 Once the users click the inquire button, they are sent to a contact form where the product information is automatically filled into the form and you can define the fields that the customer needs to fill in. By reducing the amount of steps your online users take, the better chance you have of converting them into customers.
+
+#### Features
+* Convert products into quotatable items with prices set to zero
+* Convert products into quotatable items based on tags
+* Add multiple products to quotations request
+* Autofill logged in user's information into quote request
+* Transfer filled in data for quote request into an order
+* Create proposal to customer with emails and webviews of proposal
+* Adjust all the details of proposal with terms, expiration date, pricing, line items
+* Set auto emails for new, pending, expired, and failed quotes
+* Copy and customize your own emails
+* Allow customer to pay for proposal on your website through checkout
+* Translatable text
 
 == Installation ==
 Ensure that you have WooCommerce installed. Then upload the contents via ftp or ssh to the file directory of your wordpress site under wp-content/plugins/
@@ -63,12 +78,16 @@ A: Yes. Please make a support request for more details.
 
 
 == Screenshots ==
-1. Add multiple products to a quote list
-2. Formbuilder (for older versions. New version will rely on checkout hooks)
-3. Create terms and expiration date for your proposal
-4. Emails delivered to admin and customer when rfq is received
-5. Simple settings to adjust products for inquiries and providing new pricing
-6. Customers can go straight to payment once a proposal has been made
+1. Modifies WooCommerce Add to Cart buttons to quotations request buttons
+2. Add variable products with options into quote list
+3. Collect same fields as checkout for seamless checkout integration
+4. On submission of request, customer is redirected to a review of request
+5. Admin email when a request for quotation is made
+6. Customer email when a request for quotation is made
+7. Set terms, expiration, and pricing for proposal from rfq
+8. Customer email wil proposal and action links to accept or deline
+9. Web view of proposal with action links
+10. Option to pay once proposal is accepted
 
 == Changelog ==
 
@@ -121,8 +140,110 @@ A: Yes. Please make a support request for more details.
 = 3.0.0 = 
 * Added quotes to orders for db storage and proposal creation 6/1/16
 
-== Upgrade Notice ==
-= 3.0.0 = 
-* Added quotes to orders for db storage and proposal creation 6/1/16
+= 3.0.1 = 
+* Added options to modify form fields 6/4/16
 
-== Todo ==
+== Upgrade Notice ==
+= 3.0.1 = 
+* Added options to modify form fields 6/4/16
+
+== Modify / Remove / And Add New Form Fields ==
+
+####List of fields to modify (based on wc checkout): 
+
+`
+['billing']['billing_first_name']
+['billing']['billing_last_name']
+['billing']['billing_company']
+['billing']['billing_address_1']
+['billing']['billing_address_2']
+['billing']['billing_city']
+['billing']['billing_postcode']
+['billing']['billing_country']
+['billing']['billing_state']
+['billing']['billing_email']
+['billing']['billing_phone']
+['order']['order_comments']
+`
+
+### Modifying or removing existing fields
+
+`
+// Hook in to form
+add_filter( 'boopis_rfq_form_fields' , 'custom_override_rfq_fields' );
+
+// Our hooked in function - $fields is passed via the filter!
+function custom_override_rfq_fields( $fields ) {
+
+	// Remove billing first and last name
+	unset($fields['billing']['billing_first_name']);
+	unset($fields['billing']['billing_last_name']);
+
+
+	// Make phone number optional
+	$fields['billing']['billing_phone']['required'] = false;
+
+	// Modify name and class of postcode 
+	$fields['billing']['billing_postcode'] = array(
+		'label'     => __('Zip Code', 'woocommerce'),
+		'placeholder'   => _x('Zip Code', 'placeholder', 'woocommerce'),
+		'required'  => false,
+		'class'     => array('form-row-wide'),
+		'clear'     => true
+	);
+
+  return $fields;
+}
+`
+
+### Adding new custom fields
+
+#### Add the new field
+`
+// Add new custom field
+add_action( 'boopis_rfq_after_order_notes', 'custom_select_referal_rfq' );
+
+function custom_select_referal_rfq( $rfq ) {
+
+	woocommerce_form_field( 'referal', array(
+		'type'          => 'select',
+		'class'         => array('form-row-wide'),
+		'label'         => __('How did you hear about us?'),
+		'required'   		=> true,
+		'clear'       	=> false,
+		'options'     	=> array(
+			'' 						=> __('Select Option', 'boopis-woocommerce-rfq' ),
+			'friend' 			=> __('Friend', 'boopis-woocommerce-rfq' ),
+			'coworker' 		=> __('Coworker', 'boopis-woocommerce-rfq' )
+		),
+	), $rfq->get_value( 'referal' ));
+
+}
+`
+
+#### Validate the new field
+`
+// Validate new custom field
+add_action('boopis_rfq_process', 'custom_select_referal_rfq_process');
+
+function custom_select_referal_rfq_process() {
+  // Check if set, if its not set add an error.
+	if ( empty($_POST['referal']) ) {
+		wc_add_notice( __( 'You must select the referal field.' ), 'error' );
+	}
+}
+`
+
+#### Update the new field
+`
+// Update new custom field
+add_action( 'boopis_rfq_update_order_meta', 'custom_select_referal_update_order_meta' );
+
+function custom_select_referal_update_order_meta( $order_id ) {
+	if ( ! empty( $_POST['referal'] ) ) {
+		update_post_meta( $order_id, 'Referal', sanitize_text_field( $_POST['referal'] ) );
+	}
+}
+`
+
+See [WooCommerce Docs](https://docs.woothemes.com/document/tutorial-customising-checkout-fields-using-actions-and-filters/) for more details.

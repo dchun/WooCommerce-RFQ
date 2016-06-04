@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 echo strtoupper( __( 'Proposal Terms', 'boopis-woocommerce-rfq' ) ) . "\n\n";
 
-echo boopis_rfq_get_quote_terms( $order->id ) . "\n";
+echo nl2br( esc_html( boopis_rfq_get_quote_terms( $order->id ) ) ) . "\n";
 	
 echo sprintf( 'Valid Until - %s', boopis_rfq_get_quote_expiration( $order->id ) );
 
