@@ -217,11 +217,16 @@ if ( ! class_exists( 'BOOPIS_RFQ_Front' ) ) {
 		
 				$accepted = isset( $_POST['decision'] ) && ( $_POST['decision'] == 'accept' ) ? 1 : 0;
 				$declined = isset( $_POST['decision'] ) && ( $_POST['decision'] == 'decline' ) ? 1 : 0;
-				$referer = isset( $_POST['_wp_http_referer'] ) ? $_POST['_wp_http_referer'] : '';
-				parse_str($referer, $referer_params);
+				$referer = wp_get_referer();
+
+				$params = strstr($referer, 'proposal');
+
+				parse_str($params, $referer_params);
+
+				// $debug_export = var_export($referer_params, true);
+
 				$order_id = $referer_params['proposal'];
 				$order_key = $referer_params['key'];
-				$order = wc_get_order( $order_id );
 
 				if ( $order->order_key != $order_key ) {
 					throw new Exception( __( 'Your actions are invalid, please try again.', 'boopis-woocommerce-rfq' ) );

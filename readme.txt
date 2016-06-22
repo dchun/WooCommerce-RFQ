@@ -1,6 +1,6 @@
 === Boopis WooCommerce RFQ ===
 Contributors: boopis
-Tags: rfq, request quote, quote request, zero price, hide price, hide add to cart, make offer, negotiable pricing, price filter, ask for price
+Tags: rfq, request quote, quote request, zero price, hide price, hide add to cart, make offer, negotiable pricing, price filter, ask for price, ask an estimate, budget, e-commerce, ecommerce, email quote, proposal, quotations, quote, raq, request a quote, request a quote button, request for quote, rfq, shop, woocommerce, woocommerce request a quote shortcode, woocommerce request for quote, rfi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PEZPERKEW2XG6
 Requires at least: 3.8.0
 Tested up to: 4.5
