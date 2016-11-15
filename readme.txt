@@ -143,9 +143,14 @@ A: Yes. Please make a support request for more details.
 = 3.0.1 = 
 * Added options to modify form fields 6/4/16
 
+= 3.0.3 = 
+* Fixed set message error 8/29/16
+* Custom emails 8/29/16
+
 == Upgrade Notice ==
-= 3.0.1 = 
-* Added options to modify form fields 6/4/16
+= 3.0.3 = 
+* Fixed set message error 8/29/16
+* Custom emails 8/29/16
 
 == Modify / Remove / And Add New Form Fields ==
 

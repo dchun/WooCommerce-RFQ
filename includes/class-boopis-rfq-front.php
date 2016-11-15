@@ -296,7 +296,6 @@ if ( ! class_exists( 'BOOPIS_RFQ_Front' ) ) {
 
 		    if ( get_option( 'woocommerce_cart_redirect_after_add' ) == 'yes' ) {
 		      $this->boopis_rfq_add_to_quote_message( $product_id );
-		      $woocommerce->set_messages();
 		    }
 
 		    // Return fragments
@@ -311,8 +310,6 @@ if ( ! class_exists( 'BOOPIS_RFQ_Front' ) ) {
 		      'error' => true,
 		      'product_url' => apply_filters( 'woocommerce_cart_redirect_after_error', get_permalink( $product_id ), $product_id )
 		      );
-
-		    $woocommerce->set_messages();
 
 		    echo json_encode( $data );
 		  }
@@ -551,18 +548,12 @@ if ( ! class_exists( 'BOOPIS_RFQ_Front' ) ) {
 		    $added_text = sprintf( __( '&quot;%s&quot; was successfully added to your quote.', 'boopis-woocommerce-rfq' ), get_the_title( $product_id ) );
 		  }
 
-		  // Output success messages
-		  if ( get_option( 'woocommerce_quote_redirect_after_add' ) == 'yes' ) :
-
-		    $return_to  = apply_filters( 'woocommerce_continue_shopping_redirect', wp_get_referer() ? wp_get_referer() : home_url() );
-
-		  $message  = sprintf('<a href="%s" class="button">%s</a> %s', $return_to, __( 'Continue Shopping &rarr;', 'boopis-woocommerce-rfq' ), $added_text );
-
-		  else :
-
-		    $message  = sprintf('<a href="%s" class="button">%s</a> %s', get_permalink( get_option('boopis_rfq_page_id') ), __( 'View quote &rarr;', 'boopis-woocommerce-rfq' ), $added_text );
-
-		  endif;
+			if ( 'yes' === get_option( 'woocommerce_cart_redirect_after_add' ) ) {
+				$return_to = apply_filters( 'woocommerce_continue_shopping_redirect', wc_get_raw_referer() ? wp_validate_redirect( wc_get_raw_referer(), false ) : wc_get_page_permalink( 'shop' ) );
+				$message   = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', esc_url( $return_to ), esc_html__( 'Continue Shopping', 'woocommerce' ), esc_html( $added_text ) );
+			} else {
+				$message   = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', esc_url( get_permalink( get_option('boopis_rfq_page_id') ) ), esc_html__( 'View Quote', 'boopis-woocommerce-rfq' ), esc_html( $added_text ) );
+			}
 
 		  wc_add_notice( apply_filters('boopis_rfq_add_to_quote_message', $message) );
 		}

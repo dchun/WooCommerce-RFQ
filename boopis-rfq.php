@@ -3,7 +3,7 @@
 Plugin Name: Boopis WooCommerce RFQ
 Plugin URI: https://boopis.com/products/1-wordpress-woocommerce-request-for-quotation
 Description: Replaces products with a price of zero to an open form for inquiry. Also use tags. Create proposals and convert to sales for large ticket items.
-Version: 3.0.2
+Version: 3.0.3
 Author: Boopis Media
 Author URI: http://boopis.com/
 Text Domain: boopis-woocommerce-rfq
