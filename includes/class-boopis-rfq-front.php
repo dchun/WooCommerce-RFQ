@@ -554,7 +554,7 @@ if ( ! class_exists( 'BOOPIS_RFQ_Front' ) ) {
 				$return_to = apply_filters( 'woocommerce_continue_shopping_redirect', wc_get_raw_referer() ? wp_validate_redirect( wc_get_raw_referer(), false ) : wc_get_page_permalink( 'shop' ) );
 				$message   = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', esc_url( $return_to ), esc_html__( 'Continue Shopping', 'woocommerce' ), esc_html( $added_text ) );
 			} else {
-				$message   = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', esc_url( get_permalink( get_option('boopis_rfq_page_id') ) ), esc_html__( 'View Quote', 'boopis-woocommerce-rfq' ), esc_html( $added_text ) );
+				$message   = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', esc_url( get_permalink( get_option('boopis_rfq_page_id') ) ), esc_html__( 'View Quote', 'boopis-rfq' ), esc_html( $added_text ) );
 			}
 
 		  wc_add_notice( apply_filters('boopis_rfq_add_to_quote_message', $message) );

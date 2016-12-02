@@ -148,9 +148,8 @@ A: Yes. Please make a support request for more details.
 * Custom emails 8/29/16
 
 == Upgrade Notice ==
-= 3.0.3 = 
-* Fixed set message error 8/29/16
-* Custom emails 8/29/16
+= 3.0.4 = 
+* Missing View Quote language translation hook
 
 == Modify / Remove / And Add New Form Fields ==
 
