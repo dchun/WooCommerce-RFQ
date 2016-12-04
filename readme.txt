@@ -147,9 +147,15 @@ A: Yes. Please make a support request for more details.
 * Fixed set message error 8/29/16
 * Custom emails 8/29/16
 
-== Upgrade Notice ==
 = 3.0.4 = 
 * Missing View Quote language translation hook
+
+= 3.0.5 = 
+* Fix from 3.0.4 for wrong translation hook and added missing line in pot file
+
+== Upgrade Notice ==
+= 3.0.5 = 
+* Fix from 3.0.4 for wrong translation hook and added missing line in pot file
 
 == Modify / Remove / And Add New Form Fields ==
 

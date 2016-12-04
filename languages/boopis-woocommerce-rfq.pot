@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the Boopis WooCommerce RFQ package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Boopis WooCommerce RFQ 3.0.0\n"
+"Project-Id-Version: Boopis WooCommerce RFQ 3.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/boopis-"
 "woocommerce-rfq\n"
-"POT-Creation-Date: 2016-06-03 20:19:26+00:00\n"
+"POT-Creation-Date: 2016-12-03 16:26:14+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,8 +25,8 @@ msgstr ""
 #: boopis-rfq.php:79
 msgid ""
 "ATTENTION! Plugin has been merged with premium MPRFQ Plugin. If you have the "
-"MPRFQ plugin installed, deactivate and delete it first before updating. "
-"Also, ensure that you update the premium formbuilder plugin."
+"plugin installed, deactivate and delete it first before updating. Also, the "
+"formbuilder plugin is no longer compatible."
 msgstr ""
 
 #: boopis-rfq.php:121 boopis-rfq.php:128
@@ -173,32 +173,32 @@ msgstr ""
 msgid "We were unable to process your request, please try again."
 msgstr ""
 
-#: includes/class-boopis-rfq-form.php:112
+#: includes/class-boopis-rfq-form.php:115
 msgid "is a required field."
 msgstr ""
 
-#: includes/class-boopis-rfq-form.php:125
+#: includes/class-boopis-rfq-form.php:128
 msgid "Please enter a valid postcode/ZIP."
 msgstr ""
 
-#: includes/class-boopis-rfq-form.php:134
+#: includes/class-boopis-rfq-form.php:137
 msgid "is not a valid phone number."
 msgstr ""
 
-#: includes/class-boopis-rfq-form.php:140
+#: includes/class-boopis-rfq-form.php:143
 msgid "is not a valid email address."
 msgstr ""
 
-#: includes/class-boopis-rfq-form.php:158
+#: includes/class-boopis-rfq-form.php:161
 msgid "is not valid. Please enter one of the following:"
 msgstr ""
 
-#: includes/class-boopis-rfq-form.php:350
-#: includes/class-boopis-rfq-form.php:352
+#: includes/class-boopis-rfq-form.php:353
+#: includes/class-boopis-rfq-form.php:355
 msgid "Error %d: Unable to create order. Please try again."
 msgstr ""
 
-#: includes/class-boopis-rfq-form.php:371
+#: includes/class-boopis-rfq-form.php:374
 msgid "Error %d: Unable to create rfq. Please try again."
 msgstr ""
 
@@ -220,56 +220,59 @@ msgstr ""
 msgid "View Quote &rarr;"
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:227
+#: includes/class-boopis-rfq-front.php:234
 msgid "Your actions are invalid, please try again."
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:232
+#: includes/class-boopis-rfq-front.php:239
 msgid "Customer accepted proposal."
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:240
+#: includes/class-boopis-rfq-front.php:247
 msgid "Customer declined proposal."
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:246
+#: includes/class-boopis-rfq-front.php:253
 msgid "Your must either accept or decline the offer."
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:350
+#: includes/class-boopis-rfq-front.php:354
 msgid "Quote updated."
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:383
-#: includes/class-boopis-rfq-front.php:441
+#: includes/class-boopis-rfq-front.php:387
+#: includes/class-boopis-rfq-front.php:445
 msgid "Please choose product options"
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:474
+#: includes/class-boopis-rfq-front.php:478
 msgid "Please choose the quantity of items you wish to add to your quote"
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:481
+#: includes/class-boopis-rfq-front.php:485
 msgid "Please choose a product to add to your quot"
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:543
+#: includes/class-boopis-rfq-front.php:547
 msgid "Added &quot;%s&quot; to your quote."
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:543
+#: includes/class-boopis-rfq-front.php:547
 msgid "&quot; and &quot;"
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:546
+#: includes/class-boopis-rfq-front.php:550
 msgid "&quot;%s&quot; was successfully added to your quote."
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:554
-msgid "Continue Shopping &rarr;"
+#: includes/class-boopis-rfq-front.php:555
+msgid "Continue Shopping"
 msgstr ""
 
-#: includes/class-boopis-rfq-front.php:558
+#: includes/class-boopis-rfq-front.php:557
+msgid "View Quote"
+msgstr ""
+
 #: includes/class-boopis-rfq-session.php:452
 msgid "View quote &rarr;"
 msgstr ""
@@ -559,25 +562,25 @@ msgstr ""
 msgid "Request Items"
 msgstr ""
 
-#: templates/form/main.php:66
+#: templates/form/main.php:68
 msgid "Create an account?"
 msgstr ""
 
-#: templates/form/main.php:73
+#: templates/form/main.php:75
 msgid ""
 "Create an account by entering the information below. If you are a returning "
 "customer please login at the top of the page."
 msgstr ""
 
-#: templates/form/main.php:95
+#: templates/form/main.php:97
 msgid "Submit Request"
 msgstr ""
 
-#: templates/form/main.php:101
+#: templates/form/main.php:103
 msgid "Your RFQ is empty."
 msgstr ""
 
-#: templates/form/main.php:114 templates/form/proposal.php:132
+#: templates/form/main.php:116 templates/form/proposal.php:132
 msgid "Error processing request. Please try again."
 msgstr ""
 
@@ -731,7 +734,9 @@ msgid ""
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Replaces products with a price of zero to an open form for inquiry"
+msgid ""
+"Replaces products with a price of zero to an open form for inquiry. Also use "
+"tags. Create proposals and convert to sales for large ticket items."
 msgstr ""
 
 #. Author of the plugin/theme
